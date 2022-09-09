@@ -20,8 +20,6 @@
 --
 
 DROP TABLE IF EXISTS `Contact_details`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Contact_details` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `emp_code` varchar(25) DEFAULT NULL,
@@ -42,7 +40,7 @@ CREATE TABLE `Contact_details` (
   CONSTRAINT `contact_details_ibfk_3` FOREIGN KEY (`emp_code`) REFERENCES `Employee_details` (`emp_code`),
   CONSTRAINT `contact_details_ibfk_4` FOREIGN KEY (`student_rollno`) REFERENCES `Student_details` (`student_rollno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Dumping data for table `Contact_details`
