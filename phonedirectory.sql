@@ -47,8 +47,7 @@ CREATE TABLE `Contact_details` (
 --
 
 LOCK TABLES `Contact_details` WRITE;
-/*!40000 ALTER TABLE `Contact_details` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Contact_details` ENABLE KEYS */;
+
 UNLOCK TABLES;
 
 --
